@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Me
+title: Me or Not Me
 ---
 
 
 **Your time is limited, so don't waste it living someone else's life.**
 
-**people's thinking. Don't let the noise of other's opinions drown out**
+**Don't be trapped by dogma - which is living with the results of other people's people's thinking.**
 
-**your own inner voice. And most important, have the courage to follow**
+**Don't let the noise of other's opinions drown out your own inner voice.**
 
-**your heart and intuition. They somehow already know what you truly want**
+**And most important, have the courage to follow your heart and intuition.**
 
-**to become. Everything else is secondary.**
+**They somehow already know what you truly want to become. Everything else is secondary.**
 
 {% include comments.html %}
