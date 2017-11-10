@@ -1,12 +1,10 @@
 ---
 layout: page
-title: 关于我
+title: Me
 ---
 
-一个喜欢CS的菜鸟，喜欢把这个作为开端，继续学习！
-<p>
-想通过这个平台整理个人博客，学习一些关于金融和CS的知识。
-<p>
-了解基本概念和 Python 的简单用法。
+
+     Your time is limited, so don't waste it living someone else's life. 
+Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of other's opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.
 
 {% include comments.html %}
