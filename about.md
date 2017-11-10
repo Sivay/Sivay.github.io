@@ -9,6 +9,4 @@ title: 关于我
 <p>
 了解基本概念和 Python 的简单用法。
 
-
-
-# {% include comments.html %}
+{% include comments.html %}
