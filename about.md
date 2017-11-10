@@ -4,7 +4,7 @@ title: Me
 ---
 
 
-     Your time is limited, so don't waste it living someone else's life.
+**Your time is limited, so don't waste it living someone else's life.
 
 Don't be trapped by dogma - which is living with the results of other
 
@@ -14,6 +14,6 @@ own inner voice. And most important, have the courage to follow your heart
 
 and intuition. They somehow already know what you truly want to become.
 
-Everything else is secondary.
+Everything else is secondary.**
 
 {% include comments.html %}
