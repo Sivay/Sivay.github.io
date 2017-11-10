@@ -1,19 +1,18 @@
 ---
 layout: post
-title: ÓÃPythonÊµÏÖWebscraping
-tag: Python 
+title: ç”¨Pythonå®ç°Webscraping
+tag: Python
 ---
 
-###How to get data? 
-**1.Í¨¹ıÌØ¶¨µÄ°ü»ñÈ¡ÌØ¶¨Êı¾İ£¨±¾ÖÊÊÇÒ»¸öĞ´ºÃµÄWebscraping°ü£©**
+###How to get data?
+**1.Í¨é€šè¿‡ç‰¹å®šçš„åŒ…è·å–æ•°æ®ï¼ˆæœ¬è´¨æ˜¯ä¸€ä¸ªå†™å¥½çš„WebscrapingåŒ…**
 
-Demo: tushare£¨tushareÊÇPythonµÄÒ»¸ö²Æ¾­Êı¾İ½Ó¿Ú°ü£©
+Demo: tushareï¼ˆtushareæ˜¯Pythonçš„ä¸€ä¸ªè´¢ç»æ•°æ®æ¥å£åŒ…ï¼‰
 
 > import tushare as ts  
-> df = ts.get_hist_data('000002') #»ñÈ¡ÈıÄêÄÚÈ«²¿ÈÕkÏßÊı¾İ
-> df.head(10) # pandasµÄDataFrameÊı¾İ½á¹¹£¬´òÓ¡Ç°10Ìõ¼ÇÂ¼
+> df = ts.get_hist_data('000002') # è·å–ä¸‰å¹´å†…å…¨éƒ¨æ—¥Kçº¿æ•°æ®
 
-¸ü¶àtushareµÄÓÃ·¨¿ÉÒÔ[baidu](https://jingyan.baidu.com/article/3065b3b68d7fb5becff8a494.html)
+æ›´å¤štushareçš„ç”¨æ³•å¯ä»¥å»[baidu](https://jingyan.baidu.com/article/3065b3b68d7fb5becff8a494.html)
 
 **2. Webscraping by yourself**
 
@@ -23,8 +22,8 @@ Demo: tushare£¨tushareÊÇPythonµÄÒ»¸ö²Æ¾­Êı¾İ½Ó¿Ú°ü£©
 >*  parse webpages: BeautifulSoup, re (regular expression), etc.
 >*  more sophisicated framework for large-scale crawling: Scrapy, search engines
 
- 
-**Requests×¥È¡ÍøÒ³µÄÍ¨ÓÃ´úÂë: ¼ÓÈëÒì³£²¶»ñ£¬³¬Ê±Éè¶¨£¬±àÂëÉè¶¨£¬ä¯ÀÀÆ÷Î±×°**
+
+**RequestsæŠ“å–ç½‘é¡µçš„é€šç”¨ä»£ç ï¼šåŠ å…¥å¼‚å¸¸æ•è·ï¼Œè¶…æ—¶è®¾å®šï¼Œç¼–ç è®¾å®šï¼Œæµè§ˆå™¨ä¼ªè£…**
 > import requests
 > def get_html(url):# define get_html() function
 >    try:
@@ -36,9 +35,9 @@ Demo: tushare£¨tushareÊÇPythonµÄÒ»¸ö²Æ¾­Êı¾İ½Ó¿Ú°ü£©
 >         return "Error: something is Wrong!"
 
 ###Parse webpages by BeautifulSoup
-**BeautifulSoup¿âÊÇÓÃÀ´½âÎö¡¢±éÀú¡¢Î¬»¤¡°±êÇ©Ê÷¡±µÄ¹¦ÄÜ¿â**
+**BeautifulSoupåº“æ˜¯ç”¨æ¥è§£æã€éå†ã€ç»´æŠ¤â€œæ ‡ç­¾æ ‘â€çš„åŠŸèƒ½åº“**
 
-BeautifulSoupÀàµÄ»ù±¾ÔªËØ
+BeautifulSoupç±»çš„åŸºæœ¬å…ƒç´ 
 >* <p class="title">...</p>
 
 How to use?
@@ -50,6 +49,4 @@ How to use?
 > soup = BeautifulSoup(r.text,"lxml")## get BeautifulSoup object
 > link_list = [link.get('href') for link in soup.find_all('a')] ## get all links in the page
 > ##if it starts with 'http' we are happy
-> [link for link in link_list if link is not None and link.startswith('http')] 
-
-
+> [link for link in link_list if link is not None and link.startswith('http')]
