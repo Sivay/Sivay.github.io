@@ -8,11 +8,11 @@ tag: Python
 
 **1.ͨ通过特定的包获取数据（本质是一个写好的Webscraping包）**
 
-    Demo: tushare（tushare是Python的一个财经数据接口包）
+  Demo: tushare（tushare是Python的一个财经数据接口包）
 
-> import tushare as ts  
+>      import tushare as ts  
 
-> df = ts.get_hist_data('000002') # 获取三年内全部日K线数据
+>      df = ts.get_hist_data('000002') # 获取三年内全部日K线数据
 
 更多tushare的用法可以去[baidu](https://jingyan.baidu.com/article/3065b3b68d7fb5becff8a494.html)
 
@@ -27,40 +27,40 @@ tag: Python
 
 **Requests抓取网页的通用代码：加入异常捕获，超时设定，编码设定，浏览器伪装**
 
-> import requests
+>     import requests
 
-> def get_html(url):
+>     def get_html(url):
 
->    try:
+>         try:
 
->         r = requests.get(url, headers={'User-Agent':'Mozilla/5.0'}, timeout=30)
+>               r = requests.get(url, headers={'User-Agent':'Mozilla/5.0'}, timeout=30)
 
->         r.raise_for_status()
+>               r.raise_for_status()
 
->         r.encoding = r.apparent_encoding  
+>               r.encoding = r.apparent_encoding  
 
->         return r.text
+>               return r.text
 
->     except:
+>           except:
 
->         return "Error: something is Wrong!"
+>               return "Error: something is Wrong!"
 
 ### Parse webpages by BeautifulSoup
 
 **BeautifulSoup库是用来解析、遍历、维护“标签树”的功能库**
 
-     How to use BeautifulSoup?
+  How to use BeautifulSoup?
 
-> from bs4 import BeautifulSoup
+>       from bs4 import BeautifulSoup
 
-> import requests
+>       import requests
 
-> url = "http://www.crummy.com/software/BeautifulSoup"
+>       url = "http://www.crummy.com/software/BeautifulSoup"
 
-> r = requests.get(url)
+>       r = requests.get(url)
 
-> soup = BeautifulSoup(r.text,"lxml")
+>       soup = BeautifulSoup(r.text,"lxml")
 
-> link_list = [link.get('href') for link in soup.find_all('a')]  
+>       link_list = [link.get('href') for link in soup.find_all('a')]  
 
-> [link for link in link_list if link is not None and link.startswith('http')]
+>       [link for link in link_list if link is not None and link.startswith('http')]
