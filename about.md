@@ -8,8 +8,7 @@ title: 关于我
 想通过这个平台整理个人博客，学习一些关于金融和CS的只是。
 <p>
 了解基本概念和 Python 的简单用法。
-
-<p> 
-
+<p>
+“My life didn’t please me, so I created my life.” 
 
 {% include comments.html %}
