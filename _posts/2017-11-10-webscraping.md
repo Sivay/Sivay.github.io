@@ -17,7 +17,7 @@ tag: Python
 
 **2. Webscraping by yourself**
 
-###How to scrape web data?
+### How to scrape web data?
 
 >*  crawl webpages: urllib, requests, etc.
 >*  parse webpages: BeautifulSoup, re (regular expression), etc.
@@ -27,7 +27,7 @@ tag: Python
 **Requests抓取网页的通用代码：加入异常捕获，超时设定，编码设定，浏览器伪装**
 
 > import requests
-> def get_html(url): 
+> def get_html(url):
 >    try:
 >         r = requests.get(url, headers={'User-Agent':'Mozilla/5.0'}, timeout=30)
 >         r.raise_for_status()
@@ -36,11 +36,11 @@ tag: Python
 >     except:
 >         return "Error: something is Wrong!"
 
-###Parse webpages by BeautifulSoup
+### Parse webpages by BeautifulSoup
 
 **BeautifulSoup库是用来解析、遍历、维护“标签树”的功能库**
 
-   How to use?
+     How to use?
 
 > from bs4 import BeautifulSoup
 > import requests
